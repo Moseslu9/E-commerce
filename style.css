@@ -1,0 +1,325 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  --primary-orange: hsl(26, 100%, 55%);
+  --primary-pale-orange: hsl(25, 100%, 94%);
+  --Very-vark-blue: hsl(220, 13%, 13%);
+  --Dark-grayish-blue: hsl(219, 9%, 45%);
+  --Grayish-blue: hsl(220, 14%, 75%);
+  --Light-grayish-blue: hsl(223, 64%, 98%);
+  --White: hsl(0, 0%, 100%);
+  --Black: hsl(0, 0%, 0%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+body {
+  background-color: var(--White);
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  height: 100vh;
+  width: 100vw;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  gap: 10rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 6rem;
+  margin-left: 200px;
+}
+
+.big-container__img {
+  width: 500px;
+  border-radius: 20px;
+  
+}
+
+.big-container__img:hover {
+  cursor: pointer;
+  color: var(--White);
+  opacity: 0.7;
+}
+
+.small-container {
+  display: flex;
+  margin-top: 30px;
+  gap: 1rem;
+  margin-left: 25px;
+}
+
+
+.small-container1 {
+  display: flex;
+  margin-top:2rem;
+  justify-content: center;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+.small-container1 {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+.small-container-img1:hover {
+  cursor: pointer;
+  color: var(--White);
+  opacity: 0.7;
+}
+
+.small-container-img2:hover {
+  cursor: pointer;
+  color: var(--White);
+  opacity: 0.7;
+}
+
+.small-container-img3:hover {
+  cursor: pointer;
+  color: var(--White);
+  opacity: 0.7;
+}
+
+.small-container-img4:hover {
+  cursor: pointer;
+  color: var(--White);
+  opacity: 0.7;
+}
+
+.small-container-img1 {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.small-container-img2 {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.small-container-img3 {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.small-container-img4 {
+  width: 100px;
+  border-radius: 10px;
+}
+
+.dialogue {
+  display: flex;
+  width: 100%;
+}
+
+.btn {
+  border: none;
+  display: flex;
+  margin-left: 1px;
+  align-items: center;
+  background-color: var(--primary-orange);
+  color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+svg {
+  margin-right: 15px;
+}
+
+.btn:hover {
+  color: white;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.plus {
+  justify-content: space-between;
+  border: none;
+  display: flex;
+  margin-left: 11px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--Light-grayish-blue);
+
+  color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-top: 0px;
+}
+
+#num {
+  color: black;
+}
+
+.number {
+  display: flex;
+  gap: 2rem;
+  margin-top: 40px;
+}
+
+.add {
+  cursor: pointer;
+  display: flex;
+  border: none;
+  margin-left: 15px;
+}
+
+#remove {
+  cursor: pointer;
+  display: flex;
+  border: none;
+  margin-right: 15px;
+}
+
+.openClose {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  padding: 2rem 4rem;
+  display: grid;
+  grid-template-columns: 15rem 1fr 1fr;
+}
+
+#list {
+  display: flex;
+  gap: 2rem;
+}
+
+.avater {
+  display: flex;
+  justify-content: end;
+}
+
+.avaterImg {
+  width: 10%;
+  border-radius: 50%;
+  border: 0.2rem solid var(--primary-orange);
+  margin-right: 3rem;
+}
+
+.con {
+  display: none;
+}
+
+.contain {
+  display: none;
+}
+
+.cartbox {
+  display: none;
+}
+
+.cart {
+  padding-top: 1rem;
+  margin-right: 3rem;
+}
+
+.divider {
+  background-color: var(--Dark-grayish-blue);
+  height: 1px;
+  margin-top: -2rem;
+  width: 90%;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  margin-left: 3.9rem;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+
+.attribution{
+  display: flex;
+  justify-content:center;
+ position: relative;
+ margin-top: 50rem;
+}
+
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  border-radius: 15px;
+  max-width: 500px;
+}
+
+
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 3rem;
+  right: 36rem;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color:var(--primary-orange);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
